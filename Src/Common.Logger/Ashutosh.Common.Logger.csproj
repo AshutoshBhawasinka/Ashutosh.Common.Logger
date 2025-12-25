@@ -18,6 +18,7 @@
 	<RepositoryUrl>https://github.com/AshutoshBhawasinka/Ashutosh.Common.Logger</RepositoryUrl>
 	<RepositoryType>git</RepositoryType>
 	<PackageTags>logging</PackageTags>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -29,6 +30,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
