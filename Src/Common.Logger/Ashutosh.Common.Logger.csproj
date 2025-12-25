@@ -3,10 +3,21 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <SignAssembly>true</SignAssembly>
-	<Version>3.2.0</Version>
-    <AssemblyOriginatorKeyFile>Ashutosh.Common.snk</AssemblyOriginatorKeyFile>
+	<Version>4.0.0</Version>
+	<AssemblyOriginatorKeyFile>Ashutosh.Common.snk</AssemblyOriginatorKeyFile>
 	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<Authors>Ashutosh Bhawasinka</Authors>
+	<Company>Ashutosh Bhawasinka</Company>
+	<Product>Ashutosh.Common.Logger</Product>
+	<Title>Ashutosh.Common.Logger</Title>
+	<Description>A flexible .NET logging library with runtime logger discovery using MEF</Description>
+	<Copyright>Copyright © Ashutosh Bhawasinka 2026</Copyright>
+	<PackageProjectUrl>https://github.com/AshutoshBhawasinka/Ashutosh.Common.Logger</PackageProjectUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<RepositoryUrl>https://github.com/AshutoshBhawasinka/Ashutosh.Common.Logger</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+	<PackageTags>logging</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -16,6 +27,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>..\..\Bin\</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Composition" Version="7.0.0" />
